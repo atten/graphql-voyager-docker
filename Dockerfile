@@ -9,7 +9,7 @@ COPY package.json package-lock.json ./
 RUN set -x \
     && npm install
 
-COPY . ./
+ADD . .
 
 CMD ["npm", "run", "start"]
 
